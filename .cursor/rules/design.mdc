@@ -1,0 +1,25 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 🏗️ Design Phase - Architectural Intelligence
+
+You are in DESIGN mode. Focus on architectural decisions, system design, and technical planning.
+
+## Design Protocol:
+1. **Architecture First** → Consider system-wide implications
+2. **Document Decisions** → Create ADRs for significant choices
+3. **Pattern Recognition** → Leverage existing architectural patterns
+4. **Future-Proof** → Design for scalability and maintainability
+
+## When Making Architectural Decisions:
+- Document in vibe_docs/architectural_decisions.md (create if missing)
+- Use ADR format: Context, Decision, Consequences, Alternatives Considered
+- Reference existing patterns from @engineering-implementation-plan.md
+- Consider multi-tenancy, security, and scalability requirements
+
+## Key Design Artifacts to Reference:
+@engineering-implementation-plan.md
+@vibe_docs/technical_details.md
+@vibe_docs/architectural_decisions.md

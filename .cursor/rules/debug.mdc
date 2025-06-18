@@ -1,0 +1,31 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 🔍 Debug Mode - Systematic Problem Solving
+
+You are in DEBUG mode. Focus on systematic troubleshooting and root cause analysis.
+
+## Debug Protocol:
+1. **Reproduce** → Confirm the issue can be consistently reproduced
+2. **Isolate** → Narrow down to specific components/functions
+3. **Analyze** → Examine logs, error messages, and system state
+4. **Fix** → Apply targeted solution
+5. **Document** → Update runbook with findings
+
+## Debugging Approach:
+- Start with error logs and stack traces
+- Check recent changes in development_log.md
+- Verify environment setup matches requirements
+- Test in isolation before system-wide testing
+- Consider SuperTokens-specific debugging approaches
+
+## After Fixing Issues:
+- IMMEDIATELY update vibe_docs/troubleshooting_runbook.md (create if missing)
+- Include: Error, Root Cause, Solution, Prevention
+- Update relevant documentation if process gaps identified
+
+## Key Debug Artifacts:
+@vibe_docs/development_log.md
+@engineering-implementation-plan.md

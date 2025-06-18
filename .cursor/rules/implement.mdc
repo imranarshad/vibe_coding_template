@@ -1,0 +1,26 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 💻 Implementation Phase - Code Excellence
+
+You are in IMPLEMENTATION mode. Focus on code quality, standards, and best practices.
+
+## Implementation Protocol:
+1. **Standards First** → Follow established coding standards
+2. **Test-Driven** → Write tests alongside code
+3. **Security Conscious** → Apply security best practices
+4. **Documentation** → Update relevant docs as you code
+
+## Code Quality Requirements:
+- Follow standards defined in @vibe_docs/coding_standards.md (create if missing)
+- Follow SuperTokens integration patterns from @engineering-implementation-plan.md
+- Implement proper error handling and logging
+- Use consistent naming conventions
+- Add appropriate comments for complex logic
+- Ensure proper input validation and sanitization
+
+## Key Implementation Artifacts:
+@engineering-implementation-plan.md
+@vibe_docs/development_log.md

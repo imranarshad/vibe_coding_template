@@ -1,132 +1,91 @@
-# 🎯 Vibe Coding Template
+# 🧠 Vibe Coding OS
 
-## What is Vibe Coding?
+## What is the Vibe Coding OS?
 
-Vibe Coding is a systematic approach to software development designed specifically for working with LLMs (Large Language Models). It addresses the key challenge of LLMs: limited context windows and lack of persistent memory between sessions.
+The Vibe Coding OS (Operating System) is a systematic and self-evolving framework for software development with Large Language Models (LLMs). It transforms the development process from a series of disconnected prompts into an intelligent, stateful workflow.
+
+It's designed to solve the biggest challenges of working with LLMs: their limited context windows and lack of persistent memory. It does this by creating a resilient, documentation-driven system where the LLM's "thinking" is captured, organized, and reused.
+
+## Core Principles: THINK → ACT → LEARN → EVOLVE
+
+This entire OS is built around a simple, powerful feedback loop:
+
+1.  **THINK**: Understand requirements, context, and architecture *before* writing code.
+2.  **ACT**: Execute tasks with clear guidance from established standards and patterns.
+3.  **LEARN**: Capture every decision, failure, and success as structured knowledge.
+4.  **EVOLVE**: Use that captured knowledge to make the system itself smarter for the next interaction.
 
 ## 🚀 Quick Start
 
-1. **Copy this template folder** to your new project directory
-2. **Open the project in Cursor** (or your preferred LLM-powered editor)
-3. **Let the LLM read `.cursorrules`** first
-4. **Start the discovery process** by having the LLM read `task_on_hand.md`
-5. **Answer the questions** posed by the LLM
-6. **Watch the documentation evolve** as your project takes shape
+1.  **Copy this project structure** to your new repository.
+2.  **Open the project in Cursor.** The OS will activate automatically.
+3.  **Start the discovery process by editing `vibe_docs/task_on_hand.md`**.
+4.  **Converse with the LLM.** It will read the `task_on_hand.md` and our core rules to begin asking clarifying questions.
+5.  **Watch the documentation and the system evolve** as your project takes shape.
 
-## 📁 Template Contents
+## 📁 System Architecture
 
-### `.cursorrules`
+The OS consists of two main components that work together: the Brain and the Memory.
 
-The algorithm that tells the LLM how to use all other documents:
+### 🧠 `.cursor/rules/` (The Brain)
 
-- Step-by-step instructions for reading documents
-- Rules for updating each document type
-- The discovery and development workflow
-- Critical rules to prevent context loss
+This is the intelligent engine of the OS. It's a set of modular rules that tell the LLM *how* to think and act based on the current context.
 
-### `task_on_hand.md`
+-   **`core.mdc`**: The kernel of the OS. It's **always active** and contains the core principles, auto-creation protocols, and the conflict resolution hierarchy.
+-   **`design.mdc`**: A specialist for architectural thinking. Invoked manually with **`@design`**.
+-   **`implement.mdc`**: A specialist for code quality. Activates **automatically** when you edit source code files.
+-   **`debug.mdc`**: A specialist for troubleshooting. Invoked manually with **`@debug`**.
 
-The main working document for discovery and progress:
+### 📚 `vibe_docs/` (The Memory)
 
-- Current task and status
-- Open questions to ask
-- Progress tracking with checkboxes
-- Immediate next steps
+This is the persistent knowledge base of the project. It's where the "thinking" from the Brain gets stored.
 
-### `project_context.md`
+-   **`task_on_hand.md`**: The main working document for the current session's goals and progress.
+-   **`development_log.md`**: An append-only log of all decisions and actions.
+-   **`project_context.md`** & **`technical_details.md`**: Store the long-term strategic and technical knowledge of the project.
+-   **Auto-Created Documents**: Files like `troubleshooting_runbook.md` and `coding_standards.md` are created **on-demand** by the OS the first time they are needed.
 
-Empty template for business/product information:
+## 🔄 How It Works: The Process in Action
 
-- Project overview and vision
-- Users and stakeholders
-- Business requirements
-- External dependencies
+### 1. The Core Loop (Always-On)
 
-### `technical_details.md`
+The `core.mdc` rule is always running. It ensures that every session starts with a clear understanding of the current task and that the "THINK BEFORE CODE" philosophy is always enforced.
 
-Empty template for technical decisions:
+### 2. On-Demand Documentation (Auto-Creation)
 
-- Technology stack choices
-- Architecture decisions
-- Security approach
-- Development setup
+You don't need to create every file upfront. The OS is smart. When a rule needs to document a failure, it checks for `troubleshooting_runbook.md`. If it doesn't exist, the **`Auto-Creation Protocol`** from the core rule creates it with the correct template.
 
-### `development_log.md`
+### 3. Invoking Specialists (Manual & Automatic)
 
-Empty template for append-only progress log:
+When you need to shift context, you invoke a specialist:
 
-- Timestamped entries
-- Decisions and rationale
-- Changes and their impact
-- Never modified, only appended
+-   **Making a big decision?** Start your prompt with `@design` to load the architectural thinking module.
+-   **Hitting a tough bug?** Start your prompt with `@debug` to load the systematic troubleshooting module.
+-   **Writing code?** The `implement` module activates automatically, ensuring you adhere to project standards.
 
-## 🔄 The Process
+### 4. Conflict Resolution
 
-### 1. Discovery Phase
-
-The LLM will ask you questions about:
-
-- Project goals and objectives
-- Technical requirements
-- Constraints and preferences
-- Success criteria
-
-### 2. Documentation Evolution
-
-As you answer questions:
-
-- `task_on_hand.md` gets updated with specifics
-- `project_context.md` is created with permanent info
-- Technical decisions are documented
-
-### 3. Development Phase
-
-Once understanding is complete:
-
-- Clear implementation plan emerges
-- Progress is tracked with checkboxes
-- Each session builds on previous work
+If multiple rules ever give conflicting advice, the **`Rule Conflict Resolution`** hierarchy in `core.mdc` ensures a predictable outcome. The highest priority is always **Human Override**, guaranteeing you are in control.
 
 ## 💡 Key Benefits
 
-1. **No Context Loss** - Everything is documented
-2. **Seamless Handoffs** - Any LLM can continue the work
-3. **Clear Progress** - Always know what's been done
-4. **Systematic Approach** - No important details missed
-5. **Self-Improving** - Documentation evolves with understanding
-
-## 🎯 Best Practices
-
-1. **Always start by reading `.cursorrules`**
-2. **Update documentation immediately** after decisions
-3. **Use checkboxes** for progress tracking
-4. **Ask questions** when uncertain
-5. **Document rationale** for decisions
-
-## 🚫 Common Mistakes
-
-1. **Jumping into coding** before understanding requirements
-2. **Not updating documentation** as you go
-3. **Assuming the LLM remembers** previous sessions
-4. **Skipping the question phase**
-5. **Not using checkboxes** for progress
+1.  **No Context Loss**: All critical information is persisted in `vibe_docs`.
+2.  **Self-Healing & Resilient**: The system can create missing documents and handle rule conflicts gracefully.
+3.  **Intelligent Automation**: The system automates documentation, enforces standards, and guides the development process.
+4.  **Systematic Approach**: Ensures no important details are missed during any phase of development.
+5.  **Self-Improving**: The entire system—rules and documentation—evolves and gets smarter with every interaction.
 
 ## 📝 Example Usage
 
 ```
-You: "I want to build a task management app"
+You: "Okay, I'm ready to figure out the database schema."
 
-LLM: *Reads .cursorrules and task_on_hand.md*
-"I see you want to build a task management app. Let me ask some clarifying questions:
+LLM: "Understood. What are your thoughts on the schema?"
 
-1. What is the main problem this task management app aims to solve?
-2. Who are the primary users (individuals, teams, enterprises)?
-3. What makes this different from existing solutions?
-..."
+You: "@design I need to decide between a relational (SQL) or NoSQL database for this project. Can you help me weigh the pros and cons based on our project context?"
 
-You: *Answers questions*
-
-LLM: *Updates task_on_hand.md with your answers and asks follow-up questions*
+LLM: *Reads the design.mdc rule and your project_context.md file*
+"Of course. Let's analyze this from an architectural perspective. Given that our project requires [requirement from project_context], here are the key considerations..."
 ```
 
 ## 🔧 Customization
@@ -151,4 +110,4 @@ If you develop improvements to the vibe coding system:
 
 ---
 
-**Remember**: The goal is to create a sustainable development flow that works within LLM limitations while maximizing productivity and code quality.
+**Remember**: The goal is a sustainable development flow that works *with* an LLM's strengths while systematically overcoming its weaknesses.
